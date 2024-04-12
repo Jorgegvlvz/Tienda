@@ -20,6 +20,11 @@
       font-size: xx-large;
     }
 
+    h4 {
+      color: #000000;
+      font-size: xx-large;
+    }
+
     p {
       color: #010102;
       font-weight: 700;
@@ -74,13 +79,18 @@
     .list-inline-item {
       margin-right: 10px;
     }
+
+    .offcanvas-body img {
+  height: 200px; /* Ajusta la altura según tus necesidades */
+  object-fit: contain;
+}
   </style>
 
 </head>
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark  fixed-top ">
     <div class="container">
       <a class="navbar-brand" href="#"><img src="img/logo-original.png" width="200" height="100" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -97,7 +107,7 @@
             <a class="nav-link" href="#">Productos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
+            <a class="nav-link" href="#">Nosotros</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="cuentaDropdown" role="button" data-bs-toggle="dropdown"
@@ -109,16 +119,93 @@
               <li><a class="dropdown-item" href="Registro.html">Registrarse</a></li>
             </ul>
           </li>
-          <!-- Opción de Carrito -->
+          <!-- Botón del carrito en el Navbar -->
+        <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <button class="nav-link btn btn-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#carritoOffcanvas" aria-controls="carritoOffcanvas">
               <img src="img/logo/cart4.svg" alt="Carrito" width="24" height="24">
-            </a>
+            </button>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+
+ <!-- Offcanvas del Carrito -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="carritoOffcanvas" aria-labelledby="carritoOffcanvasLabel">
+  <div class="offcanvas-header">
+    <h4 class="offcanvas-title"  id="carritoOffcanvasLabel">Tu Carrito</h4>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="img/Camisa hombre 1.jpg"img-fluid" alt="Producto 1">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Camisa Flores</h5>
+                <p class="card-text">Camisa de botones amarilla y blanca</p>
+                <p class="card-text">Precio: $20.000</p>
+                <button class="btn btn-danger">Eliminar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-md-12">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="img/Poleron hombre 1.jpg" class="img-fluid" alt="Producto 2">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Poleron Motivo Monito</h5>
+                <p class="card-text">Poleron Blanco con letras de colores</p>
+                <p class="card-text">Precio: $45.000</p>
+                <button class="btn btn-danger">Eliminar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-md-12">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="img/camisa31.jpg" class="img-fluid" alt="Producto 3">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Camisa de Mezclilla </h5>
+                <p class="card-text">Camisa de Mezclilla</p>
+                <p class="card-text">Precio: $20.000</p>
+                <button class="btn btn-danger">Eliminar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="row mt-3">
+        <div class="col-md-12 text-end">
+          <hr>
+          <h4>Total: $85.000</h4>
+          <button class="btn btn-success">Proceder al Pago</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
   <br><br><br><br><br><br>
 
@@ -300,6 +387,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+    <script>
+      var carritoOffcanvas = document.getElementById('carritoOffcanvas');
+      var offcanvas = new bootstrap.Offcanvas(carritoOffcanvas);
+    </script>
 </body>
 
 </html>
