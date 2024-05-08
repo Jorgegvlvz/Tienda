@@ -61,7 +61,7 @@
     <!-- Formulario de Registro -->
     <div class="container">
         <main class="form-signin w-100 m-auto">
-            <form>
+            <form onsubmit="return registerUser()">
                 <div style="text-align: center;">
                     <h1 class="h3 mb-3 fw-normal">Regístrate</h1>
                 </div>
@@ -110,6 +110,9 @@
                 </div>
                 <button class="btn btn-primary w-100 py-2" type="submit">Registrarse</button>
             </form>
+            <div id="successMessage" style="display: none; margin-top: 10px;" class="alert alert-success" role="alert">
+                ¡Registro exitoso!
+            </div>
         </main>
     </div>
 
@@ -119,6 +122,18 @@
         crossorigin="anonymous"></script>
     <!-- Script para cambiar de temas dark/light -->
     <script src="color-modes.js"></script>
+    <script>
+        function registerUser() {
+            
+
+            // Oculta el formulario y muestra el mensaje de éxito
+            document.getElementById("successMessage").style.display = "block";
+            document.querySelector("form").style.display = "none";
+
+            // Evita que el formulario se envíe realmente
+            return false;
+        }
+    </script>
 </body>
 
 </html>
