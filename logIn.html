@@ -61,7 +61,7 @@
     <!-- Formulario de Inicio de Sesión -->
     <div class="container">
         <main class="form-signin w-100 m-auto">
-            <form action="procesar-login.php" method="POST">
+            <form id="loginForm">
                 <div style="text-align: center;">
                     <h1 class="h3 mb-3 fw-normal">Iniciar Sesión</h1>
                 </div>
@@ -86,6 +86,9 @@
                 </div>
                 <button class="btn btn-primary w-100 py-2" type="submit">Acceder</button>
             </form>
+            <div id="successMessage" style="display: none;" class="alert alert-success mt-3" role="alert">
+                Sesión iniciada con éxito.
+            </div>
         </main>
     </div>
 
@@ -95,6 +98,13 @@
         crossorigin="anonymous"></script>
     <!-- Script para cambiar de temas dark/light -->
     <script src="color-modes.js"></script>
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            
+            document.getElementById("successMessage").style.display = "block";
+        });
+    </script>
 </body>
 
 </html>
