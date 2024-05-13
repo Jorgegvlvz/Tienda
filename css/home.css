@@ -1,0 +1,100 @@
+body {
+ 
+    background: #2c3e50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsl(203, 17%, 85%), #3a3e42);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #7eb485, #dbd37c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    
+  }
+
+
+
+  .navbar {
+    background-color: #343a40 !important;
+  }
+
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+
+  .btn-primary:hover {
+    background-color: #0016db;
+    border-color: #0056b3;
+  }
+
+  #carouselProductos {
+    margin-top: 40px;
+  }
+
+  .carousel-img {
+    height: 900px;
+    /* Puedes ajustar este valor según tus necesidades */
+    object-fit: contain;
+    /* Para que las imágenes se ajusten al tamaño sin deformarse */
+  }
+
+  .card {
+    transition: transform 0.2s;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+
+
+  .list-inline-item {
+    margin-right: 10px;
+  }
+
+  .offcanvas-body img {
+    height: 200px;
+    /* Ajusta la altura según tus necesidades */
+    object-fit: contain;
+  }
+
+  .modal-content {
+    background: linear-gradient(to bottom, #dadada, #b1afaf, #d1d1d1);
+    color: #000000;
+  }
+
+  .modal-body {
+    color: #000000;
+    /* Color del texto dentro del modal */
+    text-align: center;
+    font-family: monospace, Helvetica, sans-serif;
+
+  }
+
+  .modal-footer {
+    background-color: rgba(40, 54, 78, 0.9);
+    /* Fondo del footer con opacidad */
+  }
+
+  .font-size-precio {
+    font-size: 24px;
+    border: 2px solid #ffffff;
+    /* Borde sólido */
+    border-radius: 5px;
+    /* Esquinas redondeadas */
+    padding: 10px;
+    /* Espacio dentro del contenedor */
+    color: #20c997;
+
+  }
+
+  .font-size-hombre{
+    font-size: 30px;
+    border: 2px solid #000000; /* Borde sólido */
+    border-radius: 5px; /* Esquinas redondeadas */
+    padding: 20px; /* Espacio dentro del contenedor */
+    width: 300px; /* Ajustar el ancho del contenedor */
+    
+    }
+
+  footer {
+    padding: 40px;
+  }
+  
+ 
