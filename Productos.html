@@ -7,128 +7,14 @@
   <title>Home</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-  <style>
-    /* Estilo del fondo degradado */
-    body {
-      background: linear-gradient(to bottom, #dadada, #1F1F1F, #686868);
-      color: #000000;
-    }
-
-    h5 {
-      color: #ffffff;
-      font-size: xx-large;
-    }
-
-    h4 {
-      color: #000000;
-      font-size: xx-large;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-
-    p {
-      color: #010102;
-      font-weight: 700;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-
-    .navbar {
-      background-color: #343a40 !important;
-    }
-
-    .btn-primary {
-      background-color: #007bff;
-      border-color: #007bff;
-    }
-
-    .btn-primary:hover {
-      background-color: #0016db;
-      border-color: #0056b3;
-    }
-
-    #carouselProductos {
-      margin-top: 40px;
-    }
-
-    .carousel-img {
-      height: 900px;
-      /* Puedes ajustar este valor según tus necesidades */
-      object-fit: contain;
-      /* Para que las imágenes se ajusten al tamaño sin deformarse */
-    }
-
-    .card {
-      transition: transform 0.2s;
-    }
-
-    .card:hover {
-      transform: scale(1.05);
-    }
-
-    footer {
-      padding: 40px;
-    }
-
-    footer h5 {
-      margin-bottom: 20px;
-    }
-
-    footer p {
-      margin-bottom: 10px;
-    }
-
-    .list-inline-item {
-      margin-right: 10px;
-    }
-
-    .offcanvas-body img {
-      height: 200px;
-      /* Ajusta la altura según tus necesidades */
-      object-fit: contain;
-    }
-
-    .modal-content {
-      background: linear-gradient(to bottom, #dadada, #b1afaf, #d1d1d1);
-      color: #000000;
-    }
-
-    .modal-body {
-      color: #000000;
-      /* Color del texto dentro del modal */
-      text-align: center;
-      font-family: monospace, Helvetica, sans-serif;
-
-    }
-
-    .modal-footer {
-      background-color: rgba(0, 0, 0, 0.9);
-      /* Fondo del footer con opacidad */
-    }
-
-    .font-size-mujeres {
-  font-size: 24px;
-  border: 2px solid #333; /* Borde sólido */
-  border-radius: 5px; /* Esquinas redondeadas */
-  padding: 10px; /* Espacio dentro del contenedor */
-}
-
-.font-size-hombre{
-  font-size: 24px;
-  border: 2px solid #ffffff; /* Borde sólido */
-  border-radius: 5px; /* Esquinas redondeadas */
-  padding: 10px; /* Espacio dentro del contenedor */
-
-}
-
-
-
-  </style>
+  <link rel="stylesheet" href="css/productos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 </head>
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark  fixed-top ">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark  ">
     <div class="container">
       <a class="navbar-brand" href="#"><img src="img/logo pagina/logo-verde.png" width="200" height="100" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -137,7 +23,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
 
-        <ul class="navbar-nav ms-auto">
+        <ul class="navbar-nav ms-auto  ">
           <li class="nav-item">
             <a class="nav-link" href="Home.html">Inicio</a>
           </li>
@@ -171,9 +57,10 @@
   </nav>
 
   <!-- Offcanvas del Carrito -->
-  <div class="offcanvas offcanvas-end" tabindex="-1" id="carritoOffcanvas" aria-labelledby="carritoOffcanvasLabel">
+  <div class="offcanvas offcanvas-end navbar-dark bg-dark " tabindex="-1" id="carritoOffcanvas"
+    aria-labelledby="carritoOffcanvasLabel">
     <div class="offcanvas-header">
-      <h4 class="offcanvas-title" id="carritoOffcanvasLabel">Tu Carrito</h4>
+      <h4 class="offcanvas-title text-light" id="carritoOffcanvasLabel">Tu Carrito</h4>
       <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
@@ -181,14 +68,14 @@
         <div class="row">
           <div class="col-md-12">
             <div class="row g-0">
-              <div class="col-md-4">
-                <img src="img/Camisa hombre 1.jpg" img-fluid" alt="Producto 1">
+              <div class="col-md-5">
+                <img src="img/HOMBRES/CamisaNegraFloresBlanca1.jpg" img-fluid alt="Producto 1">
               </div>
-              <div class="col-md-8">
+              <div class="col-md-7">
                 <div class="card-body">
-                  <h5 class="card-title">Camisa Flores</h5>
-                  <p class="card-text">Camisa de botones amarilla y blanca</p>
-                  <p class="card-text">Precio: $20.000</p>
+                  <h5 class="card-title text-light">Camisa Flores</h5>
+                  <p class="card-text text-light">Camisa de botones amarilla y blanca</p>
+                  <p class="card-text font-size-precio text-light">Precio: $20.000</p>
                   <button class="btn btn-danger">Eliminar</button>
                 </div>
               </div>
@@ -199,14 +86,14 @@
         <div class="row mt-3">
           <div class="col-md-12">
             <div class="row g-0">
-              <div class="col-md-4">
+              <div class="col-md-5">
                 <img src="img/Poleron hombre 1.jpg" class="img-fluid" alt="Producto 2">
               </div>
-              <div class="col-md-8">
+              <div class="col-md-7">
                 <div class="card-body">
-                  <h5 class="card-title">Poleron Motivo Monito</h5>
-                  <p class="card-text">Poleron Blanco con letras de colores</p>
-                  <p class="card-text">Precio: $45.000</p>
+                  <h5 class="card-title text-light">Poleron Motivo Monito</h5>
+                  <p class="card-text text-light">Poleron Blanco con letras de colores</p>
+                  <p class="card-text font-size-precio text-light">Precio: $45.000</p>
                   <button class="btn btn-danger">Eliminar</button>
                 </div>
               </div>
@@ -217,15 +104,15 @@
         <div class="row mt-3">
           <div class="col-md-12">
             <div class="row g-0">
-              <div class="col-md-4">
+              <div class="col-md-5">
                 <img src="img/camisa31.jpg" class="img-fluid" alt="Producto 3">
               </div>
-              <div class="col-md-8">
+              <div class="col-md-7">
                 <div class="card-body">
-                  <h5 class="card-title">Camisa de Mezclilla </h5>
-                  <p class="card-text">Camisa de Mezclilla</p>
-                  <p class="card-text">Precio: $20.000</p>
-                  <button class="btn btn-danger">Eliminar</button>
+                  <h5 class="card-title text-light">Camisa de Mezclilla </h5>
+                  <p class="card-text text-light">Camisa de Mezclilla</p>
+                  <p class="card-text font-size-precio text-light">Precio: $20.000</p>
+                  <button class="btn btn-danger text-light">Eliminar</button>
                 </div>
               </div>
             </div>
@@ -235,9 +122,9 @@
 
 
         <div class="row mt-3">
-          <div class="col-md-12 text-end">
+          <div class="col-md-12 mx-auto text-end">
             <hr>
-            <h4>Total: $85.000</h4>
+            <h4 class="text-success"> <strong>Total:</strong> $85.000</h4>
             <button class="btn btn-success">Proceder al Pago</button>
           </div>
         </div>
@@ -251,861 +138,927 @@
   <!-- Dentro del body -->
   <div class="container">
     <div class="row">
-      <div class="col-md-6">
-        <h5 class="mt-5">Bienvenido a StylosXLey</h5>
-        <p class="lead"> <strong>Catalogo</strong> </p>
+      <div class="col-md-12">
+        <h1 class="text-center">Bienvenido a StylosXLey</h1>
+        <h2 class=" text-center text-success"> <strong>Catalogo</strong> </h2>
         <!--<a href="#" class="btn btn-primary">Ver Productos</a>-->
       </div>
     </div>
 
-    
-
-  <div class="container mt-5">
-    <h5 class="mb-4 text-black font-size-mujeres">Mujeres</h5>
 
 
-    <div class="row">
-      <!-- Primera prenda -->
-      <div class="col-md-4 mb-4">
-        <div class="card" data-bs-toggle="modal" data-bs-target="#imagen1">
-          <img src="img/mujeres/chaquetaAzul1.jpg" class="card-img-top" alt="Prenda 1">
-          <div class="card-body">
-            <h5 class="card-title">Chaqueta color Azul</h5>
-            <p class="card-text">Chaqueta de Jean Azul corte Crop </p>
-            <p class="card-text">Precio: $45.000</p>
-          </div>
-        </div>
-      </div>
-      <!-- Segunda prenda -->
-      <div class="col-md-4 mb-4" data-bs-toggle="modal" data-bs-target="#imagen2">
-        <div class="card">
-          <img src="img/mujeres/ChaquetaPuffBeige1.jpg" class="card-img-top" alt="Prenda 2">
-          <div class="card-body">
-            <h5 class="card-title">Chaqueta Puff Beige</h5>
-            <p class="card-text">Chaqueta biege impermeable  </p>
-            <p class="card-text">Precio: $80.000</p>
-          </div>
-        </div>
-      </div>
-
-      <!--tercera prenda-->
-
-      <div class="col-md-4 mb-4">
-        <div class="card" data-bs-toggle="modal" data-bs-target="#imagen3">
-          <img src="img/mujeres/ChaquetaPuffVerde1.jpg" class="card-img-top" alt="Prenda 2">
-          <div class="card-body">
-            <h5 class="card-title">Chaqueta Puff Verde</h5>
-            <p class="card-text">Chaqueta verde impermeable  </p>
-            <p class="card-text">Precio: $80.000</p>
-          </div>
-        </div>
-      </div>
-      <!--Cuarta prenda-->
-      <div class="col-md-4 mb-4" data-bs-toggle="modal" data-bs-target="#imagen4">
-        <div class="card">
-          <img src="img/mujeres/PoleronGrisNewYork1.jpg" class="card-img-top" alt="Prenda 2">
-          <div class="card-body">
-            <h5 class="card-title">Poleron Gris motivo</h5>
-            <p class="card-text">Poleron Gris con letras negras</p>
-            <p class="card-text">Precio: $35.000</p>
-          </div>
-        </div>
-      </div>
-
-      <!--quinta prenda-->
+    <div class="container mt-5">
+      <h5 class="mb-4 text-black text-center mx-auto font-size-mujeres">Mujeres</h5>
 
 
-      <div class="col-md-4 mb-4">
-        <div class="card" data-bs-toggle="modal" data-bs-target="#imagen5">
-          <img src="img/mujeres/SudaderaBeige1.jpg" class="card-img-top" alt="Prenda 2">
-          <div class="card-body">
-            <h5 class="card-title">Poleron Beige</h5>
-            <p class="card-text">Poleron Beige overzize</p>
-            <p class="card-text">Precio: $45.000</p>
-          </div>
-        </div>
-      </div>
-      <!--Sexta prenda-->
-
-
-      <div class="col-md-4 mb-4">
-        <div class="card" data-bs-toggle="modal" data-bs-target="#imagen6">
-          <img src="img/mujeres/SobretodoGris1.jpg" class="card-img-top" alt="Prenda 2">
-          <div class="card-body">
-
-            <h5 class="card-title">Sobretodo Gris</h5>
-            <p class="card-text">Sobretodo Gris impermeable </p>
-            <p class="card-text">Precio: $75.000</p>
-
-          </div>
-        </div>
-      </div>
-
-      <!--modal 1 -->
-      <div class="modal fade" id="imagen1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5 d-block mx-auto" id="exampleModalLabel ">
-                StylosXLey
-              </h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <h2 class="h3 text-center pb-3">Camisa Flores</h2>
-
-              <!-- Carrusel de Imágenes -->
-              <div id="carouselModal" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="img/Camisa hombre 1.jpg" class="d-block w-100" alt="Camisa 1">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="img/Camisa hombre 2.jpg" class="d-block w-100" alt="Camisa 2">
-                  </div>
-                  <!-- Agrega más elementos carousel-item según las imágenes que desees mostrar -->
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselModal"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Siguiente</span>
-                </button>
-              </div>
-
-              <div class="row p-5 fs-4">
-                <ul>
-                  <li>Camisa Flores</li>
-                  <li>Materiales: algodón, lana y poliéster 100%</li>
-                  <li>Tallas: S, M, L, XL</li>
-                  <li>Precio: $20.000</li>
-                </ul>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary">Agregar al carrito</button>
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!--modal 2-->
-
-      <div class="modal fade" id="imagen2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5 d-block mx-auto" id="exampleModalLabel ">
-                StylosXLey
-              </h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <h2 class="h3 text-center pb-3">Camisa Flores</h2>
-
-              <!-- Carrusel de Imágenes -->
-              <div id="carouselModal" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="img/Camisa hombre 1.jpg" class="d-block w-100" alt="Camisa 1">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="img/Camisa hombre 2.jpg" class="d-block w-100" alt="Camisa 2">
-                  </div>
-                  <!-- Agrega más elementos carousel-item según las imágenes que desees mostrar -->
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselModal"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Siguiente</span>
-                </button>
-              </div>
-
-              <div class="row p-5 fs-4">
-                <ul>
-                  <li>Camisa Flores</li>
-                  <li>Materiales: algodón, lana y poliéster 100%</li>
-                  <li>Tallas: S, M, L, XL</li>
-                  <li>Precio: $20.000</li>
-                </ul>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary">Agregar al carrito</button>
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!--modal 3 -->
-
-      <div class="modal fade" id="imagen3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5 d-block mx-auto" id="exampleModalLabel ">
-                StylosXLey
-              </h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <h2 class="h3 text-center pb-3">Camisa Mezclilla</h2>
-
-              <!-- Carrusel de Imágenes -->
-              <div id="carouselModal" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="img/camisa31.jpg" class="d-block w-100" alt="Camisa 1">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="img/Camisa hombre 3.jpg.jpg" class="d-block w-100" alt="Camisa 2">
-                  </div>
-                  <!-- Agrega más elementos carousel-item según las imágenes que desees mostrar -->
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselModal"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Siguiente</span>
-                </button>
-              </div>
-
-              <div class="row p-5 fs-4">
-                <ul>
-                  <li>Camisa Flores</li>
-                  <li>Materiales: algodón, lana y poliéster 100%</li>
-                  <li>Tallas: S, M, L, XL</li>
-                  <li>Precio: $20.000</li>
-                </ul>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary">Agregar al carrito</button>
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!--modal 4 -->
-
-      <div class="modal fade" id="imagen4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5 d-block mx-auto" id="exampleModalLabel ">
-                StylosXLey
-              </h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <h2 class="h3 text-center pb-3">Camisa Flores</h2>
-
-              <!-- Carrusel de Imágenes -->
-              <div id="carouselModal" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="img/Camisa hombre 1.jpg" class="d-block w-100" alt="Camisa 1">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="img/Camisa hombre 2.jpg" class="d-block w-100" alt="Camisa 2">
-                  </div>
-                  <!-- Agrega más elementos carousel-item según las imágenes que desees mostrar -->
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselModal"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Siguiente</span>
-                </button>
-              </div>
-
-              <div class="row p-5 fs-4">
-                <ul>
-                  <li>Camisa Flores</li>
-                  <li>Materiales: algodón, lana y poliéster 100%</li>
-                  <li>Tallas: S, M, L, XL</li>
-                  <li>Precio: $20.000</li>
-                </ul>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary">Agregar al carrito</button>
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!--modal 5 -->
-      <div class="modal fade" id="imagen5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5 d-block mx-auto" id="exampleModalLabel ">
-                StylosXLey
-              </h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <h2 class="h3 text-center pb-3">Camisa Flores</h2>
-
-              <!-- Carrusel de Imágenes -->
-              <div id="carouselModal" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="img/Camisa hombre 1.jpg" class="d-block w-100" alt="Camisa 1">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="img/Camisa hombre 2.jpg" class="d-block w-100" alt="Camisa 2">
-                  </div>
-                  <!-- Agrega más elementos carousel-item según las imágenes que desees mostrar -->
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselModal"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Siguiente</span>
-                </button>
-              </div>
-
-              <div class="row p-5 fs-4">
-                <ul>
-                  <li>Camisa Flores</li>
-                  <li>Materiales: algodón, lana y poliéster 100%</li>
-                  <li>Tallas: S, M, L, XL</li>
-                  <li>Precio: $20.000</li>
-                </ul>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary">Agregar al carrito</button>
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!--modal 6-->
-
-      <div class="modal fade" id="imagen6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5 d-block mx-auto" id="exampleModalLabel ">
-                StylosXLey
-              </h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <h2 class="h3 text-center pb-3">Camisa Flores</h2>
-
-              <!-- Carrusel de Imágenes -->
-              <div id="carouselModal" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="img/Camisa hombre 1.jpg" class="d-block w-100" alt="Camisa 1">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="img/Camisa hombre 2.jpg" class="d-block w-100" alt="Camisa 2">
-                  </div>
-                  <!-- Agrega más elementos carousel-item según las imágenes que desees mostrar -->
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselModal"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Siguiente</span>
-                </button>
-              </div>
-
-              <div class="row p-5 fs-4">
-                <ul>
-                  <li>Camisa Flores</li>
-                  <li>Materiales: algodón, lana y poliéster 100%</li>
-                  <li>Tallas: S, M, L, XL</li>
-                  <li>Precio: $20.000</li>
-                </ul>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary">Agregar al carrito</button>
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    <h5 class="mb-4 text-grey font-size-hombre" >Hombres</h5>
-
-   <div class="row">
-         <!-- Primera prenda -->
-         <div class="col-md-4 mb-4">
+      <div class="row">
+        <!-- Primera prenda -->
+        <div class="col-md-4 mb-4">
           <div class="card" data-bs-toggle="modal" data-bs-target="#imagen1">
-            <img src="img/HOMBRES/CamisaAzulRayasBlancas1.jpg" class="card-img-top" alt="Prenda 1">
+            <img src="img/mujeres/chaquetaAzul1.jpg" class="card-img-top" alt="Prenda 1">
             <div class="card-body">
-              <h5 class="card-title">Camisa Rayada</h5>
-              <p class="card-text">Camisa Azul con rayas blancas </p>
-              <p class="card-text">Precio: $20.000</p>
+              <h5 class="card-title">Chaqueta color Azul</h5>
+              <p class="card-text">Chaqueta de Jean Azul corte Crop </p>
+              <p class="card-text">Precio: $45.000</p>
             </div>
           </div>
         </div>
         <!-- Segunda prenda -->
         <div class="col-md-4 mb-4" data-bs-toggle="modal" data-bs-target="#imagen2">
           <div class="card">
-            <img src="img/HOMBRES/CamisaNegraFloresBlanca1.jpg" class="card-img-top" alt="Prenda 2">
+            <img src="img/mujeres/ChaquetaPuffBeige1.jpg" class="card-img-top" alt="Prenda 2">
             <div class="card-body">
-              <h5 class="card-title">Camisa con Flores</h5>
-              <p class="card-text">Camisa negra con motivo de flores blancas </p>
-              <p class="card-text">Precio: $20.000</p>
+              <h5 class="card-title">Chaqueta Puff Beige</h5>
+              <p class="card-text">Chaqueta biege impermeable </p>
+              <p class="card-text">Precio: $80.000</p>
             </div>
           </div>
         </div>
 
+        <!--tercera prenda-->
 
-      <!--tercera prenda-->
-
-      <div class="col-md-4 mb-4">
-        <div class="card" data-bs-toggle="modal" data-bs-target="#imagen3">
-          <img src="img/camisa31.jpg" class="card-img-top" alt="Prenda 2">
-          <div class="card-body">
-            <h5 class="card-title">Camisa Mezclilla</h5>
-            <p class="card-text">Camisa de Mezclilla Azul con detalles blancos</p>
-            <p class="card-text">Precio: $20.000</p>
-          </div>
-        </div>
-      </div>
-      <!--Cuarta prenda-->
-      <div class="col-md-4 mb-4" data-bs-toggle="modal" data-bs-target="#imagen4">
-        <div class="card">
-          <img src="img/poleron hombre 12.jpg" class="card-img-top" alt="Prenda 2">
-          <div class="card-body">
-            <h5 class="card-title">Poleron Gris</h5>
-            <p class="card-text">Poleron Gris con motivo de flores de colores </p>
-            <p class="card-text">Precio: $45.000</p>
-          </div>
-        </div>
-      </div>
-
-      <!--quinta prenda-->
-
-
-      <div class="col-md-4 mb-4">
-        <div class="card" data-bs-toggle="modal" data-bs-target="#imagen5">
-          <img src="img/poleron hombre 2.jpg" class="card-img-top" alt="Prenda 2">
-          <div class="card-body">
-            <h5 class="card-title">Poleron Azul</h5>
-            <p class="card-text">Poleron de estilo clasico azul con detalles plata </p>
-            <p class="card-text">Precio: $45.000</p>
-          </div>
-        </div>
-      </div>
-      <!--Sexta prenda-->
-
-
-      <div class="col-md-4 mb-4">
-        <div class="card" data-bs-toggle="modal" data-bs-target="#imagen6">
-          <img src="img/chaqueta 3.jpg" class="card-img-top" alt="Prenda 2">
-          <div class="card-body">
-
-            <h5 class="card-title">Chaqueta Beige</h5>
-            <p class="card-text">Chaqueta Beige cuero </p>
-            <p class="card-text">Precio: $75.000</p>
-
-          </div>
-        </div>
-      </div>
-
-      <!--modal 1 -->
-      <div class="modal fade" id="imagen1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5 d-block mx-auto" id="exampleModalLabel ">
-                StylosXLey
-              </h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="col-md-4 mb-4">
+          <div class="card" data-bs-toggle="modal" data-bs-target="#imagen3">
+            <img src="img/mujeres/ChaquetaPuffVerde1.jpg" class="card-img-top" alt="Prenda 2">
+            <div class="card-body">
+              <h5 class="card-title">Chaqueta Puff Verde</h5>
+              <p class="card-text">Chaqueta verde impermeable </p>
+              <p class="card-text">Precio: $80.000</p>
             </div>
-            <div class="modal-body">
-              <h2 class="h3 text-center pb-3">Camisa Flores</h2>
+          </div>
+        </div>
+        <!--Cuarta prenda-->
+        <div class="col-md-4 mb-4" data-bs-toggle="modal" data-bs-target="#imagen4">
+          <div class="card">
+            <img src="img/mujeres/PoleronGrisNewYork1.jpg" class="card-img-top" alt="Prenda 2">
+            <div class="card-body">
+              <h5 class="card-title">Poleron Gris motivo</h5>
+              <p class="card-text">Poleron Gris con letras negras</p>
+              <p class="card-text">Precio: $35.000</p>
+            </div>
+          </div>
+        </div>
 
-              <!-- Carrusel de Imágenes -->
-              <div id="carouselModal" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="img/Camisa hombre 1.jpg" class="d-block w-100" alt="Camisa 1">
+        <!--quinta prenda-->
+
+
+        <div class="col-md-4 mb-4">
+          <div class="card" data-bs-toggle="modal" data-bs-target="#imagen5">
+            <img src="img/mujeres/SudaderaBeige1.jpg" class="card-img-top" alt="Prenda 2">
+            <div class="card-body">
+              <h5 class="card-title">Poleron Beige</h5>
+              <p class="card-text">Poleron Beige overzize</p>
+              <p class="card-text">Precio: $45.000</p>
+            </div>
+          </div>
+        </div>
+        <!--Sexta prenda-->
+
+
+        <div class="col-md-4 mb-4">
+          <div class="card" data-bs-toggle="modal" data-bs-target="#imagen6">
+            <img src="img/mujeres/SobretodoGris1.jpg" class="card-img-top" alt="Prenda 2">
+            <div class="card-body">
+
+              <h5 class="card-title">Sobretodo Gris</h5>
+              <p class="card-text">Sobretodo Gris impermeable </p>
+              <p class="card-text">Precio: $75.000</p>
+
+            </div>
+          </div>
+        </div>
+
+        <!--modal 1 -->
+        <div class="modal fade" id="imagen1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5 d-block mx-auto" id="exampleModalLabel ">
+                  StylosXLey
+                </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h3 text-center pb-3">Camisa Flores</h2>
+
+                <!-- Carrusel de Imágenes -->
+                <div id="Mujer1" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="img/mujeres/chaquetaAzul1.jpg" class="d-block w-100" alt="Camisa 1">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/mujeres/chaquetaAzul2.jpg" class="d-block w-100" alt="Camisa 2">
+                    </div>
+                    <!-- Agrega más elementos carousel-item según las imágenes que desees mostrar -->
                   </div>
-                  <div class="carousel-item">
-                    <img src="img/Camisa hombre 2.jpg" class="d-block w-100" alt="Camisa 2">
-                  </div>
-                  <!-- Agrega más elementos carousel-item según las imágenes que desees mostrar -->
+                  <button class="carousel-control-prev" type="button" data-bs-target="#Mujer1" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#Mujer1" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                  </button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselModal"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Siguiente</span>
-                </button>
-              </div>
 
-              <div class="row p-5 fs-4">
-                <ul>
-                  <li>Camisa Flores</li>
-                  <li>Materiales: algodón, lana y poliéster 100%</li>
-                  <li>Tallas: S, M, L, XL</li>
-                  <li>Precio: $20.000</li>
-                </ul>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary">Agregar al carrito</button>
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!--modal 2-->
-
-      <div class="modal fade" id="imagen2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5 d-block mx-auto" id="exampleModalLabel ">
-                StylosXLey
-              </h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <h2 class="h3 text-center pb-3">Camisa Flores</h2>
-
-              <!-- Carrusel de Imágenes -->
-              <div id="carouselModal" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="img/Camisa hombre 1.jpg" class="d-block w-100" alt="Camisa 1">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="img/Camisa hombre 2.jpg" class="d-block w-100" alt="Camisa 2">
-                  </div>
-                  <!-- Agrega más elementos carousel-item según las imágenes que desees mostrar -->
+                <div class="row p-5 fs-4">
+                  <ul>
+                    <li>Camisa Flores</li>
+                    <li>Materiales: algodón, lana y poliéster 100%</li>
+                    <li>Tallas: S, M, L, XL</li>
+                    <li>Precio: $20.000</li>
+                  </ul>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselModal"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Siguiente</span>
-                </button>
               </div>
-
-              <div class="row p-5 fs-4">
-                <ul>
-                  <li>Camisa Flores</li>
-                  <li>Materiales: algodón, lana y poliéster 100%</li>
-                  <li>Tallas: S, M, L, XL</li>
-                  <li>Precio: $20.000</li>
-                </ul>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
               </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary">Agregar al carrito</button>
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
             </div>
           </div>
         </div>
-      </div>
 
-      <!--modal 3 -->
+        <!--modal 2-->
 
-      <div class="modal fade" id="imagen3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5 d-block mx-auto" id="exampleModalLabel ">
-                StylosXLey
-              </h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <h2 class="h3 text-center pb-3">Camisa Mezclilla</h2>
+        <div class="modal fade" id="imagen2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5 d-block mx-auto" id="exampleModalLabel ">
+                  StylosXLey
+                </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h3 text-center pb-3">Camisa Flores</h2>
 
-              <!-- Carrusel de Imágenes -->
-              <div id="carouselModal" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="img/camisa31.jpg" class="d-block w-100" alt="Camisa 1">
+                <!-- Carrusel de Imágenes -->
+                <div id="carouselModal12" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="img/Camisa hombre 1.jpg" class="d-block w-100" alt="Camisa 1">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/Camisa hombre 2.jpg" class="d-block w-100" alt="Camisa 2">
+                    </div>
+                    <!-- Agrega más elementos carousel-item según las imágenes que desees mostrar -->
                   </div>
-                  <div class="carousel-item">
-                    <img src="img/Camisa hombre 3.jpg.jpg" class="d-block w-100" alt="Camisa 2">
-                  </div>
-                  <!-- Agrega más elementos carousel-item según las imágenes que desees mostrar -->
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal12"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselModal12"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                  </button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselModal"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Siguiente</span>
-                </button>
-              </div>
 
-              <div class="row p-5 fs-4">
-                <ul>
-                  <li>Camisa Flores</li>
-                  <li>Materiales: algodón, lana y poliéster 100%</li>
-                  <li>Tallas: S, M, L, XL</li>
-                  <li>Precio: $20.000</li>
-                </ul>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary">Agregar al carrito</button>
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!--modal 4 -->
-
-      <div class="modal fade" id="imagen4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5 d-block mx-auto" id="exampleModalLabel ">
-                StylosXLey
-              </h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <h2 class="h3 text-center pb-3">Camisa Flores</h2>
-
-              <!-- Carrusel de Imágenes -->
-              <div id="carouselModal" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="img/Camisa hombre 1.jpg" class="d-block w-100" alt="Camisa 1">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="img/Camisa hombre 2.jpg" class="d-block w-100" alt="Camisa 2">
-                  </div>
-                  <!-- Agrega más elementos carousel-item según las imágenes que desees mostrar -->
+                <div class="row p-5 fs-4">
+                  <ul>
+                    <li>Camisa Flores</li>
+                    <li>Materiales: algodón, lana y poliéster 100%</li>
+                    <li>Tallas: S, M, L, XL</li>
+                    <li>Precio: $20.000</li>
+                  </ul>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselModal"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Siguiente</span>
-                </button>
               </div>
-
-              <div class="row p-5 fs-4">
-                <ul>
-                  <li>Camisa Flores</li>
-                  <li>Materiales: algodón, lana y poliéster 100%</li>
-                  <li>Tallas: S, M, L, XL</li>
-                  <li>Precio: $20.000</li>
-                </ul>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
               </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary">Agregar al carrito</button>
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
             </div>
           </div>
         </div>
-      </div>
 
-      <!--modal 5 -->
-      <div class="modal fade" id="imagen5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5 d-block mx-auto" id="exampleModalLabel ">
-                StylosXLey
-              </h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <h2 class="h3 text-center pb-3">Camisa Flores</h2>
+        <!--modal 3 -->
 
-              <!-- Carrusel de Imágenes -->
-              <div id="carouselModal" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="img/Camisa hombre 1.jpg" class="d-block w-100" alt="Camisa 1">
+        <div class="modal fade" id="imagen3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5 d-block mx-auto" id="exampleModalLabel ">
+                  StylosXLey
+                </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h3 text-center pb-3">Camisa Mezclilla</h2>
+
+                <!-- Carrusel de Imágenes -->
+                <div id="carouselModal13" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="img/camisa31.jpg" class="d-block w-100" alt="Camisa 1">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/Camisa hombre 3.jpg.jpg" class="d-block w-100" alt="Camisa 2">
+                    </div>
+                    <!-- Agrega más elementos carousel-item según las imágenes que desees mostrar -->
                   </div>
-                  <div class="carousel-item">
-                    <img src="img/Camisa hombre 2.jpg" class="d-block w-100" alt="Camisa 2">
-                  </div>
-                  <!-- Agrega más elementos carousel-item según las imágenes que desees mostrar -->
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal13"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselModal13"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                  </button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselModal"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Siguiente</span>
-                </button>
-              </div>
 
-              <div class="row p-5 fs-4">
-                <ul>
-                  <li>Camisa Flores</li>
-                  <li>Materiales: algodón, lana y poliéster 100%</li>
-                  <li>Tallas: S, M, L, XL</li>
-                  <li>Precio: $20.000</li>
-                </ul>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary">Agregar al carrito</button>
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!--modal 6-->
-
-      <div class="modal fade" id="imagen6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5 d-block mx-auto" id="exampleModalLabel ">
-                StylosXLey
-              </h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <h2 class="h3 text-center pb-3">Camisa Flores</h2>
-
-              <!-- Carrusel de Imágenes -->
-              <div id="carouselModal" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="img/Camisa hombre 1.jpg" class="d-block w-100" alt="Camisa 1">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="img/Camisa hombre 2.jpg" class="d-block w-100" alt="Camisa 2">
-                  </div>
-                  <!-- Agrega más elementos carousel-item según las imágenes que desees mostrar -->
+                <div class="row p-5 fs-4">
+                  <ul>
+                    <li>Camisa Flores</li>
+                    <li>Materiales: algodón, lana y poliéster 100%</li>
+                    <li>Tallas: S, M, L, XL</li>
+                    <li>Precio: $20.000</li>
+                  </ul>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselModal"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Siguiente</span>
-                </button>
               </div>
-
-              <div class="row p-5 fs-4">
-                <ul>
-                  <li>Camisa Flores</li>
-                  <li>Materiales: algodón, lana y poliéster 100%</li>
-                  <li>Tallas: S, M, L, XL</li>
-                  <li>Precio: $20.000</li>
-                </ul>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
               </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary">Agregar al carrito</button>
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
             </div>
           </div>
         </div>
+
+        <!--modal 4 -->
+
+        <div class="modal fade" id="imagen4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5 d-block mx-auto" id="exampleModalLabel ">
+                  StylosXLey
+                </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h3 text-center pb-3">Camisa Flores</h2>
+
+                <!-- Carrusel de Imágenes -->
+                <div id="carouselModal14" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="img/Camisa hombre 1.jpg" class="d-block w-100" alt="Camisa 1">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/Camisa hombre 2.jpg" class="d-block w-100" alt="Camisa 2">
+                    </div>
+                    <!-- Agrega más elementos carousel-item según las imágenes que desees mostrar -->
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal14"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselModal14"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                  </button>
+                </div>
+
+                <div class="row p-5 fs-4">
+                  <ul>
+                    <li>Camisa Flores</li>
+                    <li>Materiales: algodón, lana y poliéster 100%</li>
+                    <li>Tallas: S, M, L, XL</li>
+                    <li>Precio: $20.000</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--modal 5 -->
+        <div class="modal fade" id="imagen5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5 d-block mx-auto" id="exampleModalLabel ">
+                  StylosXLey
+                </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h3 text-center pb-3">Camisa Flores</h2>
+
+                <!-- Carrusel de Imágenes -->
+                <div id="carouselModal15" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="img/Camisa hombre 1.jpg" class="d-block w-100" alt="Camisa 1">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/Camisa hombre 2.jpg" class="d-block w-100" alt="Camisa 2">
+                    </div>
+                    <!-- Agrega más elementos carousel-item según las imágenes que desees mostrar -->
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal15"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselModal15"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                  </button>
+                </div>
+
+                <div class="row p-5 fs-4">
+                  <ul>
+                    <li>Camisa Flores</li>
+                    <li>Materiales: algodón, lana y poliéster 100%</li>
+                    <li>Tallas: S, M, L, XL</li>
+                    <li>Precio: $20.000</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--modal 6-->
+
+        <div class="modal fade" id="imagen6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5 d-block mx-auto" id="exampleModalLabel ">
+                  StylosXLey
+                </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h3 text-center pb-3">Camisa Flores</h2>
+
+                <!-- Carrusel de Imágenes -->
+                <div id="carouselModal16" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="img/Camisa hombre 1.jpg" class="d-block w-100" alt="Camisa 1">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/Camisa hombre 2.jpg" class="d-block w-100" alt="Camisa 2">
+                    </div>
+                    <!-- Agrega más elementos carousel-item según las imágenes que desees mostrar -->
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal16"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselModal16"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                  </button>
+                </div>
+
+                <div class="row p-5 fs-4">
+                  <ul>
+                    <li>Camisa Flores</li>
+                    <li>Materiales: algodón, lana y poliéster 100%</li>
+                    <li>Tallas: S, M, L, XL</li>
+                    <li>Precio: $20.000</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h5 class="mb-4 text-grey font-size-hombre mx-auto">Hombres</h5>
+
+        <div class="row">
+          <!-- Primera prenda -->
+          <div class="col-md-4 mb-4">
+            <div class="card" data-bs-toggle="modal" data-bs-target="#imagen1">
+              <img src="img/HOMBRES/CamisaAzulRayasBlancas1.jpg" class="card-img-top" alt="Prenda 1">
+              <div class="card-body">
+                <h5 class="card-title"> <strong>Camisa Rayada</strong></h5>
+                <p class="card-text">Camisa Azul con estanpado de rayas blancas </p>
+                <p class="card-text">Precio: $20.000</p>
+              </div>
+            </div>
+          </div>
+          <!-- Segunda prenda -->
+          <div class="col-md-4 mb-4" data-bs-toggle="modal" data-bs-target="#imagen2">
+            <div class="card">
+              <img src="img/HOMBRES/CamisaNegraFloresBlanca1.jpg" class="card-img-top" alt="Prenda 2">
+              <div class="card-body">
+                <h5 class="card-title"> <strong>Camisa Flores</strong></h5>
+                <p class="card-text">Camisa negra con motivo de flores blancas </p>
+                <p class="card-text">Precio: $20.000</p>
+              </div>
+            </div>
+          </div>
+          <!--tercera prenda-->
+
+          <div class="col-md-4 mb-4">
+            <div class="card" data-bs-toggle="modal" data-bs-target="#imagen3">
+              <img src="img/camisa31.jpg" class="card-img-top" alt="Prenda 2">
+              <div class="card-body">
+                <h5 class="card-title"><strong>Camisa Mezclilla</strong></h5>
+                <p class="card-text">Camisa de Mezclilla Azul con detalles blancos</p>
+                <p class="card-text">Precio: $20.000</p>
+              </div>
+            </div>
+          </div>
+          <!--Cuarta prenda-->
+          <div class="col-md-4 mb-4" data-bs-toggle="modal" data-bs-target="#imagen4">
+            <div class="card">
+              <img src="img/poleron hombre 12.jpg" class="card-img-top" alt="Prenda 2">
+              <div class="card-body">
+                <h5 class="card-title"><strong>Poleron Gris</strong></h5>
+                <p class="card-text">Poleron Gris con motivo de flores de colores </p>
+                <p class="card-text">Precio: $45.000</p>
+              </div>
+            </div>
+          </div>
+
+          <!--quinta prenda-->
+
+
+          <div class="col-md-4 mb-4">
+            <div class="card" data-bs-toggle="modal" data-bs-target="#imagen5">
+              <img src="img/poleron hombre 2.jpg" class="card-img-top" alt="Prenda 2">
+              <div class="card-body">
+                <h5 class="card-title"><Strong>Poleron Azul</Strong></h5>
+                <p class="card-text">Poleron de estilo clasico azul con detalles plata </p>
+                <p class="card-text">Precio: $45.000</p>
+              </div>
+            </div>
+          </div>
+          <!--Sexta prenda-->
+
+
+          <div class="col-md-4 mb-4">
+            <div class="card" data-bs-toggle="modal" data-bs-target="#imagen6">
+              <img src="img/HOMBRES/ChaquetaMarron1.jpg" class="card-img-top" alt="Prenda 2">
+              <div class="card-body">
+
+                <h5 class="card-title"><strong>Jacket Marron</strong></h5>
+                <p class="card-text">Chaqueta Marron con detalles negros y cuero </p>
+                <p class="card-text">Precio: $75.000</p>
+
+              </div>
+            </div>
+          </div>
+
+          <!--modal 1 -->
+          <div class="modal fade" id="imagen11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5 d-block mx-auto" id="exampleModalLabel ">
+                    StylosXLey
+                  </h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h2 class="h3 text-center pb-3"><strong>Camisa Azul con rayas</strong></h2>
+
+                  <!-- Carrusel de Imágenes -->
+                  <div id="carouselModal1" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img/HOMBRES/CamisaAzulRayasBlancas1.jpg" class="d-block w-100" alt="Camisa 1">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/HOMBRES/CamisaAzulRayasBlancas2.jpg" class="d-block w-100" alt="Camisa 2">
+                      </div>
+                      <!-- Agrega más elementos carousel-item según las imágenes que desees mostrar -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal1"
+                      data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselModal1"
+                      data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Siguiente</span>
+                    </button>
+                  </div>
+
+                  <div class="row p-5 fs-4">
+                    <ul>
+                      <li><strong>Camisa Azul con rayas</strong></li>
+                      <li>Materiales: algodón, lana y poliéster 100%</li>
+                      <li>Tallas: S, M, L, XL</li>
+                      <li>Precio: $20.000</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--modal 2-->
+
+          <div class="modal fade" id="imagen2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5 d-block mx-auto" id="exampleModalLabel ">
+                    StylosXLey
+                  </h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h2 class="h3 text-center pb-3"><strong>Camisa negra con flores blancas</strong></h2>
+
+                  <!-- Carrusel de Imágenes -->
+                  <div id="hombre1" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img/HOMBRES/CamisaNegraFloresBlanca1.jpg" class="d-block w-100" alt="Camisa 1">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/HOMBRES/CamisaAzulRayasBlancas2.jpg" class="d-block w-100" alt="Camisa 2">
+                      </div>
+                      <!-- Agrega más elementos carousel-item según las imágenes que desees mostrar -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#hombre1" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#hombre1" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Siguiente</span>
+                    </button>
+                  </div>
+
+                  <div class="row p-5 fs-4">
+                    <ul>
+                      <li><strong>Camisa negra con flores blancas</strong></li>
+                      <li>Materiales: algodón, lana y poliéster 100%</li>
+                      <li>Tallas: S, M, L, XL</li>
+                      <li>Precio: $20.000</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--modal 3 -->
+
+          <div class="modal fade" id="imagen3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5 d-block mx-auto" id="exampleModalLabel ">
+                    StylosXLey
+                  </h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h2 class="h3 text-center pb-3"> <strong>Camisa Mezclilla</strong></h2>
+
+                  <!-- Carrusel de Imágenes -->
+                  <div id="carouselModal3" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img/camisa31.jpg" class="d-block w-100" alt="Camisa 1">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/Camisa hombre 3.jpg" class="d-block w-100" alt="Camisa 2">
+                      </div>
+                      <!-- Agrega más elementos carousel-item según las imágenes que desees mostrar -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal3"
+                      data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselModal3"
+                      data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Siguiente</span>
+                    </button>
+                  </div>
+
+                  <div class="row p-5 fs-4">
+                    <ul>
+                      <li><strong>Camisa de Mezclilla azul oscuro</strong></li>
+                      <li>Materiales: algodón, lana y Mezclilla</li>
+                      <li>Tallas: S, M, L, XL</li>
+                      <li>Precio: $35.000</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--modal 4 -->
+
+          <div class="modal fade" id="imagen4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5 d-block mx-auto" id="exampleModalLabel ">
+                    StylosXLey
+                  </h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h2 class="h3 text-center pb-3"><strong>Poleron Gris con estanpado</strong></h2>
+
+                  <!-- Carrusel de Imágenes -->
+                  <div id="carouselModal4" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img/Poleron hombre 1.jpg" class="d-block w-100" alt="Camisa 1">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/poleron hombre 12.jpg" class="d-block w-100" alt="Camisa 2">
+                      </div>
+                      <!-- Agrega más elementos carousel-item según las imágenes que desees mostrar -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal4"
+                      data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselModal4"
+                      data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Siguiente</span>
+                    </button>
+                  </div>
+
+                  <div class="row p-5 fs-4">
+                    <ul>
+                      <li><strong>Poleron Gris con estanpado</strong></li>
+                      <li>Materiales: algodón, lana y poliéster 100%</li>
+                      <li>Tallas: S, M, L, XL</li>
+                      <li>Precio: $45.000</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--modal 5 -->
+          <div class="modal fade" id="imagen5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5 d-block mx-auto" id="exampleModalLabel ">
+                    StylosXLey
+                  </h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h2 class="h3 text-center pb-3"><strong>Poleron Azul corte Clasico</strong></h2>
+
+                  <!-- Carrusel de Imágenes -->
+                  <div id="carouselModal5" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img/HOMBRES/poleronAzulClasico2.jpg" class="d-block w-100" alt="Camisa 1">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/poleron hombre 2.jpg" class="d-block w-100" alt="Camisa 2">
+                      </div>
+                      <!-- Agrega más elementos carousel-item según las imágenes que desees mostrar -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal5"
+                      data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselModal5"
+                      data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Siguiente</span>
+                    </button>
+                  </div>
+
+                  <div class="row p-5 fs-4">
+                    <ul>
+                      <li><strong>Poleron Azul corte Clasico</strong></li>
+                      <li>Materiales: algodón, lana y poliéster 100%</li>
+                      <li>Tallas: S, M, L, XL</li>
+                      <li>Precio: $45.000</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--modal 6-->
+
+          <div class="modal fade" id="imagen6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5 d-block mx-auto" id="exampleModalLabel ">
+                    StylosXLey
+                  </h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h2 class="h3 text-center pb-3"><strong>Chaqueta Marron Cuero Premium</strong></h2>
+
+                  <!-- Carrusel de Imágenes -->
+                  <div id="carouselModal6" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img/HOMBRES/ChaquetaMarron2.jpg" class="d-block w-100" alt="Camisa 1">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/HOMBRES/ChaquetaMarron1.jpg" class="d-block w-100" alt="Camisa 2">
+                      </div>
+                      <!-- Agrega más elementos carousel-item según las imágenes que desees mostrar -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal6"
+                      data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselModal6"
+                      data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Siguiente</span>
+                    </button>
+                  </div>
+
+                  <div class="row p-5 fs-4">
+                    <ul>
+                      <li><strong>Chaqueta MarronCuero Premium</strong></li>
+                      <li>Materiales: algodón, lana y poliéster 100%</li>
+                      <li>Tallas: S, M, L, XL</li>
+                      <li>Precio: $75.000</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
+    </div>
+
+
+
+  </div>
+  </div>
+  </div>
+
+  <footer class="footer bg-dark text-dark bg-opacity-10">
+    <div class="container">
+      <div class="row">
+
+        <!-- 1 -->
+        <div class="col-md-4 text-center font-footer">
+
+          <h4 class=" mt-1 text-center"> <strong>Nosotros</strong> </h4>
+          <hr class="mb-4">
+
+          <h6 class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium beatae unde
+            dolorem dignissimos ducimus. Suscipit, animi. Nam sunt quisquam nihil quaerat eaque. Quaerat pariatur neque
+            saepe totam ut, corrupti provident!</h6>
+
+        </div>
+
+
+        <!--1-->
+
+
+        <!--2-->
+
+        <div class="col-md-4 font-footer">
+          <h4 class="mt-1 text-center"> <strong>Tu cuenta</strong> </h4>
+          <hr class="mb-4">
+          <a href="url_de_seguimiento" class="text-center">
+            <h6>Seguimiento</h6>
+          </a>
+          
+          <a href="url_de_ordenes" class="text-center">
+            <h6>Ordenes</h6>
+          </a>
+
+          <a href="url_de_cuenta" class="text-center">
+            <h6>Cuenta</h6>
+          </a>
+        
+        </div>
+
+
+        <!--2-->
+
+        <!--3-->
+        <div class="col-md-4 col-lg-4 col-xl-4 mt-1 text-justify">
+
+          <h4 class="text-center"><strong>Contacto</strong></h4>
+          
+          <hr class="mb-4">
+
+          <p>
+            <li class="fas fa-home me-3"> </li> Av.Macul 2570
+          </p>
+          <p>
+            <li class="fas fa-envelope me-3"> </li> spystore@gmail.com
+          </p>
+
+          <p>
+            <li class="fas fa-phone me-3"> </li> +56930974157
+          </p>
+          <p>
+            <li class="fas fa-print me-3"> </li> 20170817
+          </p>
+         
+
 
        
 
 
 
-    
 
-
-
-
-
-
-
-
-
-    </div>
-    <br><br>
-
- 
-  </div>
-
-  <footer class="footer-expand- bg-dark text-light bg-opacity-10 ">
-    <div class="container-fluid"> <!-- Utilizamos container-fluid para que el contenido ocupe todo el ancho -->
-      <div class="row">
-        <div class="col-md-6 text-justify">
-          <h5>Información de Contacto</h5>
-          <h6>Dirección: Av. Principal #123, Ciudad</h6>
-          <h6>Teléfono: +123 456 789</h6>
-          <h6>Email: info@mitienda.com</h6>
         </div>
-        <div class="col-md-6 text-center">
-          <h5>Síguenos en Redes Sociales</h5>
+        <!--3-->
+        <hr class="mb-4 mt-4">
+
+
+
+        <!--4-->
+
+        <div class="col-md-12 text-center">
+
+
+
           <ul class="list-inline">
-            <li class="list-inline-item"><a href="https://www.instagram.com/gmcglz/"><img src="img/logo/instagram.svg" height="28" alt="Instagram"></a></li>
-            <li class="list-inline-item"><a href="https://www.instagram.com/tupagina"><img src="img/logo/whatsapp.svg" height="25" alt="Instagram"></a></li>
-            <li class="list-inline-item me-3"><a href="https://www.facebook.com/tupagina"><img src="img/logo/facebook.svg" height="30" alt="Facebook"></a></li>
-            <li class="list-inline-item me-3"><a href="https://www.twitter.com/tupagina"><img src="img/logo/twitter.svg" height="30" alt="Twitter"></a></li>
-            <li class="list-inline-item"><a href="https://www.instagram.com/tupagina"><img src="img/logo/tiktok.svg" height="30" alt="Instagram"></a></li>
+            <li class="list-inline-item"><a href="https://www.instagram.com/gmcglz/"><img src="img/logo/instagram.svg "
+                  height="28" alt="Instagram"></a></li>
+
+            <li class="list-inline-item"><a href="https://www.instagram.com/tupagina"><img src="img/logo/whatsapp.svg "
+                  height="25" alt="Instagram"></a></li>
+            <li class="list-inline-item me-3"><a href="https://www.facebook.com/tupagina"><img
+                  src="img/logo/facebook.svg " height="30" alt="Facebook"></a></li>
+            <li class="list-inline-item me-3"><a href="https://www.twitter.com/tupagina"><img
+                  src="img/logo/twitter.svg " height="30" alt="Twitter"></a></li>
+            <li class="list-inline-item"><a href="https://www.instagram.com/tupagina"><img src="img/logo/tiktok.svg "
+                  height="30" alt="Instagram"></a></li>
           </ul>
         </div>
+
+
+        <!--4-->
       </div>
     </div>
   </footer>
+
+
 
 
 
@@ -1117,4 +1070,5 @@
     var offcanvas = new bootstrap.Offcanvas(carritoOffcanvas);
   </script>
 </body>
+
 </html>
